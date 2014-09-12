@@ -8,10 +8,10 @@ figure {
  -webkit-border-radius: 10px;
  -moz-border-radius: 10px;
  border-radius: 10px;
- border-color:#5C0A0A;
- -moz-box-shadow: 10px 10px 5px #8A0F0F;
- -webkit-box-shadow: 10px 10px 5px #8A0F0F;
- box-shadow: 10px 10px 5px #8A0F0F;
+ border-color:#570400;
+ -moz-box-shadow: 10px 10px 5px #570400;
+ -webkit-box-shadow: 10px 10px 5px #570400;
+ box-shadow: 10px 10px 5px #570400;
 }
 ';
 ?>
@@ -23,15 +23,13 @@ figure {
 <!-- Sidans/Dokumentets huvudsakliga innehåll -->
 	<div id="content">
 
-		<?php include("incl/logoRight.php"); ?>
-
-		<article class="border" style="width:80%">
+		<article class="borderRight width80 justify">
 			<h1 class="centerText">Om mig själv</h1>
 
 			<figure id="centerImg">
-				<img src="img/about.jpg" alt="Segling i medelhavet" width="700px">
+				<img src="img/about.jpg" alt="Segling i medelhavet">
 				<figcaption>
-					<p>Segling är livet.</p>
+					<p>Segling är livet.
 				</figcaption>
 			</figure>
 
@@ -42,9 +40,9 @@ figure {
 			<p>Vanligen så utvecklar jag appar för android och IOS, men även spel i Unity 3D och UDK med tillhörande
 					3D-modellering i 3DS-Max och Maya. 
 			<p>Jag är kunnig inom språk som java, c++, c, c#, python, SQL, 
-					ruby on rails, Objective-C, perl osv, och jobbar även deltid som konsult.</p>
+					ruby on rails, Objective-C, perl osv, och jobbar även deltid som konsult.
 
-			<p>/Bex</p>
+			<p>/Bex
 
 			<?php include("incl/byline.php"); ?>
 

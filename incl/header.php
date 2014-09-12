@@ -1,7 +1,7 @@
 
 
 <!doctype html>
-<html>
+<html lang="sv">
 <head>
 	<meta charset="utf-8">
 	<title><?php echo $title; ?></title>
@@ -9,6 +9,10 @@
 	<link rel="alternate stylesheet" href="style/debug.css" title="Debug stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" href="img/shortcut.ico">
+
+    <?php
+    error_reporting(-1);
+    ?>
 
 	<!-- Each page can set $pageStyle to create additional style -->
 	<?php if(isset($pageStyle)) : ?>
@@ -26,23 +30,34 @@
 <body<?php if(isset($pageId)) echo " id='$pageId' "; ?>>
 <div id="wrap">
 	<header id="above">
-		<!-- Relateted links -->
-		<nav class="related">
-			<a href="../knom01/me.php">kmom01</a>
-			kmom02
-		</nav>
+        <!-- login & logout menu -->
+        <?php echo userLoginMenu(); ?>
+
+        <!-- Relateted links -->
+        <nav class="related">
+            <a href="../knom01/me.php">kmom01</a>
+            <a href="../knom02/me.php">kmom02</a>
+            kmom03
+        </nav>
 	</header>
 
 	<div id="main">
 		<div id="headerContainer">
 			<!-- Header -->
-			<header id="top">
-
+            <header id="logo">
+                <div id="logoCenter">
+                    <a href="me.php"><img src="img/logo.png" alt="htmlphp logo"></a>
+                </div>
+            </header>
+			<header id="menu">
 				<!-- Main navigation menu -->
-				<nav class="navmenu">
-					<a id="me-"     href="me.php">Om mig</a>
-					<a id="report-" href="report.php">Redovisning</a>
-					<a id="source-" href="viewsource.php">Källkod</a>
+				<nav id="cssmenu">
+                    <ul>
+                        <li id="me-"><a href='me.php'><span>Om mig</span></a></li>
+                        <li id="report-"><a href='report.php'><span>Redovisning</span></a></li>
+                        <li id="source-" ><a href='viewsource.php'><span>Källkod</span></a></li>
+                        <li id="test-" class='last'><a href="test.php">Tester</a></li>
+                    </ul>
 				</nav>
 			</header>
 		</div>

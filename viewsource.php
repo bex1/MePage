@@ -16,7 +16,6 @@ $pageStyle=$sourceStyle;
 
 <!-- Sidans/Dokumentets huvudsakliga innehåll -->
 <div id="content">
-	<?php include("incl/logoRight.php"); ?>
 	<?php echo "$sourceBody"; ?>
 	<hr>
 </div>

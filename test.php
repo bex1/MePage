@@ -85,7 +85,7 @@ else
             <?php include("$path/aside.php"); ?>
         </aside>
 
-        <article class="right justify borderLeft" style="width: 72%">
+        <article class="right justify borderLeft" style="width:72%">
             <?php include("$path/$file"); ?>
             <?php include("incl/byline.php"); ?>
             <hr>

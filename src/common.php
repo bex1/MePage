@@ -50,3 +50,25 @@ function destroySession() {
     // Finally, destroy the session.
     session_destroy();
 }
+
+// -------------------------------------------------------------------------------------------
+//
+// Function to open and read a directory, return its content as an array.
+//
+// $aPath: A path to the directory to scan for files.
+//
+function readDirectory($aPath) {
+    $list = Array();
+    if(is_dir($aPath)) {
+        if ($dh = opendir($aPath)) {
+            while (($file = readdir($dh)) !== false) {
+                if(is_file("$aPath/$file") && $file != '.htaccess') {
+                    $list[$file] = "$file";
+                }
+            }
+            closedir($dh);
+        }
+    }
+    sort($list, SORT_STRING);
+    return $list;
+}

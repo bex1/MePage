@@ -96,6 +96,37 @@ include("incl/header.php"); ?>
             funktioner och egen optimering. Nu kan jag lättare på egen hand utforska funktionaliteten i phps stora bibliotek.
         <p>För inloggning så är username och password: bex
 
+        <hr>
+        <h3>Redovisning av kmom04</h3>
+
+        <h4>Reflektera över svårigheter/problem/lösningar/resultatet, etc.</h4>
+        <p> Momentet rullade på ganska fort då jag känner mig hyffsat bekväm med CSS. Det var intressant att få mer information
+            av hur sessioner kan användas för att dynamiskt ändra sidan. Jag stötte inte på några problem alls denna gång.
+
+        <h4>Börjar du känna att du bemästrar CSS? Beskriv hur väl du kan CSS (nybörjare, erfaren).</h4>
+        <p> Jag kan väll inte påstå att jag fullt ut bemästrar CSS, men jag får mindre och mindre problem stylingen. Dvs
+            jag lyckas oftast att få stylen att se ut som jag tänkt mig. Jag är ett mellanting mellan nybörjare och erfaren
+            när det gäller CSS. Ibland tvingas jag googla etc för att hitta en stylistisk lösning på mitt problem. Men så
+            brukar arbetssättet se ut mer eller mindre oavsett erfarenhet antar jag.
+
+        <h4>Vad tycker du om CSS så här långt in i kursen?</h4>
+        <p> Jag tycker CSS är mycket vasst när det gäller stor effekt av små ändringar. Det krävs liksom oftast väldigt lite för
+            att man ska kunna testa en ny idé i sin stylesheet. Dessutom så uppskatter jag den relativt lösa kopplingen man får
+            till webbsidan och att man på så sätt dynamiskt kan ändra sin style av sidan. I många xml baserade style varianter jag
+            jobbar med till vardags så är element och style mycket tightare kopplade. Detta medför komplicerade och tidskrävande
+            ändringar då man vill testa något nytt.
+
+        <h4>Lyckades du med din style-väljare?</h4>
+        <p> Jag la inte så mycket tid på att ändra den processbaserade lösning som mos skapat. Den kändes vettig och jag följde
+            med i koden utan några problem. Jag hade något liknande i skallen då jag problemet introducerades.
+
+        <h4>Hur tänkte du när du gjorde din extra stylesheet och vad blev resultatet?</h4>
+        <p> Eftersom jag redan byggt upp en egen ganska omfattande stylesheet redan så var jag mest sugen på att leka lite med
+            färgsättningen. Min flickvän var självklart i rummet då så det blev såklart en rosa variant..... :P
+
+        <h4>Hur går det med ditt PHP:ande?</h4>
+        <p> Det går bara fint, programmering är inte nåt nytt för mig. Jag gillar dock inte syntaxen, men det är väll en vanesak.
+
 		<?php include("incl/byline.php"); ?>
 
 		<hr>

@@ -1,4 +1,5 @@
-<?php include("incl/config.php");
+<?php
+include("incl/config.php");
 $pageId = "style";
 
 
@@ -22,6 +23,13 @@ switch($p)
 
     case "choose-stylesheet-process":
         include("$path/choose_stylesheet_process.php");
+        break;
+
+    case "edit-stylesheet":
+    {
+        $title   = "Editera Stylesheet";
+        $file        = "edit_stylesheet.php";
+    }
         break;
 
     default:

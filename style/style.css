@@ -3,6 +3,7 @@
 
 */
 @import url(forms.css);
+@import url(table.css);
 
 /* fonts
 --------------------------------------------------------
@@ -175,6 +176,7 @@ body#me #cssmenu ul li#me- a,
 body#report #cssmenu ul li#report- a,
 body#source #cssmenu ul li#source- a,
 body#test #cssmenu ul li#test- a,
+body#blokket #cssmenu ul li#blokket- a,
 body#style #cssmenu ul li#style- a{
     color: #A89F9D;
 }
@@ -182,6 +184,7 @@ body#me #cssmenu ul li#me- a:before,
 body#report #cssmenu ul li#report- a:before,
 body#source #cssmenu ul li#source- a:before,
 body#test #cssmenu ul li#test- a:before,
+body#blokket #cssmenu ul li#blokket- a:before,
 body#style #cssmenu ul li#style- a:before{
     width: 100%;
 }

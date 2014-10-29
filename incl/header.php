@@ -44,7 +44,9 @@
         <nav class="related">
             <a href="../knom01/me.php">kmom01</a>
             <a href="../knom02/me.php">kmom02</a>
-            kmom03
+            <a href="../knom03/me.php">kmom03</a>
+            <a href="../knom04/me.php">kmom04</a>
+            knom05
         </nav>
 	</header>
 
@@ -64,6 +66,7 @@
                         <li id="report-"><a href='report.php'><span>Redovisning</span></a></li>
                         <li id="source-"><a href='viewsource.php'><span>Källkod</span></a></li>
                         <li id="test-"><a href="test.php">Tester</a></li>
+                        <li id="blokket-"><a href="blokket.php">Blokket</a></li>
                         <li id="style-" class='last'><a href="style.php">Style</a></li>
                     </ul>
 				</nav>

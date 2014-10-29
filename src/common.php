@@ -1,18 +1,4 @@
 <?php
-// ===========================================================================================
-//
-// Filename: common.php
-//
-// Description: useful functions while building a website.
-//
-// Author: Mikael Roos, mos@bth.se
-//
-// Change history:
-// 
-// 2011-02-04: 
-// First try. Used as example code in htmlphp-kmom03.
-//
-
 
 // -------------------------------------------------------------------------------------------
 //
@@ -51,11 +37,12 @@ function destroySession() {
     session_destroy();
 }
 
+
 // -------------------------------------------------------------------------------------------
 //
 // Function to open and read a directory, return its content as an array.
 //
-// $aPath: A path to the directory to scan for files.
+// $aPath: A path to the directory to scan for files. 
 //
 function readDirectory($aPath) {
     $list = Array();
@@ -71,4 +58,36 @@ function readDirectory($aPath) {
     }
     sort($list, SORT_STRING);
     return $list;
+}
+
+
+// -------------------------------------------------------------------------------------------
+//
+// Function to read a file and return its content.
+//
+// $aFilename: A filename with the whole path.
+//  
+function getFileContents($aFilename) {
+    if(is_readable($aFilename)) {
+        return file_get_contents($aFilename);
+    } else {
+        return "Filen finns ej.";
+    }
+}
+
+
+// -------------------------------------------------------------------------------------------
+//
+// Function to save content to a file and return the status of the operation.
+//
+// $aFilename: A filename with the whole path. 
+// $aContent: The content to save.
+//  
+function putFileContents($aFilename, $aContent) {
+    if(is_writable($aFilename)) {
+        file_put_contents($aFilename, $aContent);
+        return "Filen sparades.";
+    } else {
+        return "Filen är inte skrivbar och kunde inte sparas.";
+    }
 }
